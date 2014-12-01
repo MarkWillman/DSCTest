@@ -153,7 +153,7 @@ configuration Assert_DSCService
       
       ### Environment section commented out for template, please edit this section for your own environment builds
       
-<#
+
       rsCloudServersOpenStack DFWwebfarm
       {
         Ensure = "Present"
@@ -162,14 +162,14 @@ configuration Assert_DSCService
         namingConvention = "Farm"
         image = "Windows Server 2012"
         nflavor = "performance1-4"
-        dataCenter = "DFW"
+        dataCenter = "SYD"
         role = "webFarm"
-        pullServerName = "PULLServer"
-        environmentGuid = "UNIQUEGUID"
+        pullServerName = "MarkW-pull"
+        environmentGuid = "c6f4de8e-8a8c-4f00-a1c2-51b02a807345"
         BuildTimeOut = 30
         EnvironmentName = "DFWwebfarm"
       }
-
+<#
 
       rsCloudServersOpenStack DFWDevfarm
       {
