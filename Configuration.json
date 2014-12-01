@@ -1,0 +1,14 @@
+﻿{
+    "repos":  [
+	            {
+				  "repo_key": "full_name",
+	              "repo_value":  "MarkWillman/DSCTest",
+				  "commands": [
+				                {
+				                    "command":  "Get-ScheduledTask -TaskName 'Verify' | Start-ScheduledTask",
+				                    "order":  1
+				                }
+                             ]
+                }
+            ]
+}
