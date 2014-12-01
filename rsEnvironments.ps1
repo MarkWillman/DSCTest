@@ -46,7 +46,7 @@ configuration Assert_DSCService
       # Configures default NIC names to ensure they meet standard naming convention, if the server is Rackconnect v2 the Name value
       # will be overridden to unused and private and the unused interface will be disabled
       ##################################################################################################################################
-      rsNetAdapter SetDefaultNic0
+ <#     rsNetAdapter SetDefaultNic0
       {
          InterfaceDescription = "Citrix PV Network Adapter #0"
          Name = "Public"
@@ -56,7 +56,8 @@ configuration Assert_DSCService
          InterfaceDescription = "Citrix PV Network Adapter #1"
          Name = "Private"
       }
-      ##################################################################################################################################
+#>   
+   ##################################################################################################################################
       # Install Required Windows Features (pull server)
       ##################################################################################################################################
       WindowsFeature IIS
